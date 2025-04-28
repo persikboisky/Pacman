@@ -155,13 +155,6 @@ function drawMap() {
 
 const pacman = new Pacman(SPAWN_PACMAN_X, SPAWN_PACMAN_Y);
 
-
-// const ghost1 = new Ghost(SPAWN_GHOSTS_X, SPAWN_GHOSTS_Y, DISTANCE_LOOK_GHOST);
-// const ghost2 = new Ghost(SPAWN_GHOSTS_X, SPAWN_GHOSTS_Y, DISTANCE_LOOK_GHOST);
-// const ghost3 = new Ghost(SPAWN_GHOSTS_X, SPAWN_GHOSTS_Y, DISTANCE_LOOK_GHOST);
-
-//const ghost1 = new Ghost(10, 5, 100);
-
 let ghost = new Array(MAX_GHOST);
 
 for (let i = 0; i < MAX_GHOST; i++) {
@@ -233,7 +226,7 @@ function update() {
         });
 
         if (GameOver) {
-            console.log("Hello");
+            span.innerHTML = "Game Over";
         }
     }
 }
